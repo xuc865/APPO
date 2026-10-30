@@ -67,7 +67,8 @@ which pip
 # pip install LLaMA-Factory/flash_attn-2.8.3+cu12torch2.6cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
 # pip install wandb
  
-export WANDB_API_KEY="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"
+# Provide WANDB_API_KEY in the environment when online logging is needed.
+export WANDB_API_KEY="${WANDB_API_KEY:-}"
 # Command to launch training
 # setuptools==80.10.2
 export WANDB_MODE=offline
