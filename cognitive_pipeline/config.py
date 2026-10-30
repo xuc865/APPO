@@ -34,7 +34,7 @@ QWEN3_VLLM_BASE_URL = "http://localhost:8002/v1"  # vllm 服务地址
 # GPT 配置（从环境变量读取 API Key）
 GPT_MODEL = "claude_sonnet4_5"
 GPT_API_KEY = os.getenv("GPT_API_KEY") or os.getenv("OPENAI_API_KEY", "")
-GPT_BASE_URL = "https://ai-llm-gateway.amap.com/v1"
+GPT_BASE_URL = os.getenv("GPT_BASE_URL", "")
 GPT_MAX_TOKENS = 8192
 
 # ============================================================
