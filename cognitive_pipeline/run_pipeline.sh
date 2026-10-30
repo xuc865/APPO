@@ -133,7 +133,7 @@ echo "======================================"
 
 
 # bash /mnt/workspace/wxc/AERPO/cognitive_pipeline/run_pipeline.sh \
-#   --api-key fEUqZab1vvhezVgMElSNPzzi \
+#   --api-key "$OPENAI_API_KEY" \
 #   --api-url https://ai-llm-gateway.amap.com/v1
 
 python -m vllm.entrypoints.openai.api_server \
