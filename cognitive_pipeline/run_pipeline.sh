@@ -134,7 +134,7 @@ echo "======================================"
 
 # bash /mnt/workspace/wxc/AERPO/cognitive_pipeline/run_pipeline.sh \
 #   --api-key "$OPENAI_API_KEY" \
-#   --api-url https://ai-llm-gateway.amap.com/v1
+#   --api-url "$GPT_BASE_URL"
 
 python -m vllm.entrypoints.openai.api_server \
   --model /mnt/workspace/wxc/Agent/models/Qwen2.5-7B-Instruct \
