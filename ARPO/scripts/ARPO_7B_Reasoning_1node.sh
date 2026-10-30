@@ -83,8 +83,8 @@ ROLLOUT_SAVE_PATH="${SAVE_PATH}/rollout"
 rm -rf $SAVE_PATH
 
 # ============================ WandB Configuration ============================
-# WandB settings
-WANDB_API_KEY="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" # Modify your wandb key
+# WandB settings (provide WANDB_API_KEY in the environment when online logging is needed)
+WANDB_API_KEY="${WANDB_API_KEY:-}"
 
 export WANDB_MODE=offline
 export WANDB_DIR="/home/wangxucong.wxc/wandb"
