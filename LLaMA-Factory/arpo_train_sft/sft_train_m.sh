@@ -115,7 +115,8 @@ TRAIN_ARGS="LLaMA-Factory/arpo_train_sft/yaml/qwen.yaml"
 stat=$(date +%s)
 
  
-export WANDB_API_KEY="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"
+# Provide WANDB_API_KEY in the environment when online logging is needed.
+export WANDB_API_KEY="${WANDB_API_KEY:-}"
 # Command to launch training
 # setuptools==80.10.2
 export WANDB_MODE=offline
